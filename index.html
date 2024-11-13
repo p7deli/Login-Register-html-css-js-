@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+
+        <div class="form-container sign-up-container">
+
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="input-container">
+                    <input class="form-control" type="text" id="name" required placeholder="Username" />
+                    <!-- <label for="name">Name</label> -->
+                </div>
+                <div class="input-container">
+                    <input class="form-control" type="email" id="email" required placeholder="Email" />
+                    <!-- <label for="email">Email</label> -->
+                </div>
+                <div class="input-container">
+                    <input class="form-control" type="password" id="password" required placeholder="Password" />
+                    <!-- <label for="password">Password</label> -->
+                </div>
+                <div class="input-container">
+                    <input class="form-control" type="password" id="password" required placeholder="Confirm Password" />
+                    <!-- <label for="password">confirm password</label> -->
+                </div>
+                <button class="set_1" type="button" id="signUpButton">Sign Up</button>
+                <p>have an account? <a href="#" id="signIn">Sign In</a></p>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="input-container">
+                    <input class="form-control" type="email" id="signInEmail" required placeholder="Email" />
+                    <!-- <label for="signInEmail">Email</label> -->
+                </div>
+                <div class="input-container">
+                    <input class="form-control" type="password" id="signInPassword" required placeholder="Password" />
+                    <!-- <label for="signInPassword">Password</label> -->
+                </div>
+                <button class="set_2" type="button" id="signInButton">Sign In</button>
+                <p>Don't have an account? <a href="#" id="signUp" style="color: #2e75f8;">Sign Up</a></p>
+                <a href="#" id="signUp" style="color: #2e75f8; font-weight: bold;">Forget Password?</a>
+            </form>
+        </div>        
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us,<br>please login with your personal info</p>
+                    <button class="ghost-1" id="signInOverlay">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details<br> and start your journey with us</p>
+                    <button class="ghost-2" id="signUpOverlay">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
